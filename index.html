@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>GuifOS</title>
+    <link rel="stylesheet" href="./styles/styles.css">
+    <link id="linkDarkCSS" rel="stylesheet" href="./styles/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Chakra+Petch:300,400,500,600,700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <header class="page-title">
+        <p id="counter"></p>
+    </header>
+
+    <div class="main-wrapper">
+
+        
+            <nav>
+                <img src="./images/gifOF_logo.png" alt="gifOS Logo" id="logoNode">
+                <div class="menu-items">
+                    <a href="./recorder.html" id="gifCreator">Crear Guifos</a>
+                    <div class="menu-items-theme-dropdown-button">
+                        <a id="themeButton">Elegir tema</a>
+                        <div id="themeDropdown">
+                            <img src="./images/dropdown.svg" alt="dropdown">
+                        </div>
+                        <div class="dropdown-items" id="dropdownItems">
+                            <a class="dropdown-item" id="lightMode"><u>S</u>ailor Day</a>
+                            <a class="dropdown-item" id="darkMode">Sailor Night</a>
+                        </div>
+                    </div>
+                    <button id="misGuifosButton"><u>M</u>is Guifos</button>
+                </div>
+            </nav>
+        
+
+
+        <main id="mainWrapper">
+
+            <section class="search" id="searchSection">
+
+                <div class="search-title">
+                    <p><b>Buscar</b></p>
+                </div>
+
+                <div class="search-main">
+                    <form class="search-form" id="searchForm">
+                        <input type="text" class="search-bar" id="searchInput" placeholder="Busca gifs, hashtags, temas, busca lo que quieras…" autocomplete="off" onkeyup="stoppedTyping()">
+                        <button type="submit" class="search-button" id="searchButton" onmouseover="hoverWhenActiveOn()" onmouseout="hoverWhenActiveOff()" disabled><img src="./images/lupa_inactive.svg" alt="Lupa" id="lupaSearch">Buscar</button>
+                    </form>
+                </div>
+
+            </section>
+
+            <section class="search-suggestions" id="searchSuggestions">
+            </section>
+
+            <section class="search-history" id="searchHistory">
+            </section>
+
+            <!-- <section class="search-output">
+
+                <div class="search-output-title" id="searchOutputTitle">
+                    <p id="searchOutTitleText"></p>
+                </div>
+
+                <div id="searchOutput" class="search-output"></div>
+
+            </section> -->
+
+            <section class="suggestions">
+
+                <div class="suggestions-title">
+                    <p>Hoy te sugerimos:</p>
+                </div>
+
+                <div class="suggestions-card-container">
+
+                    <figure class="suggestions-card" id="suggestionOne">
+                        <div class="suggestions-card-title">
+                            <p><b>#HarryPotter</b></p>
+                            <img src="./images/close.svg" alt="Close">
+                        </div>
+                        <div class="suggestions-card-gif" id="gifCard1">
+                            <a id="seeMoreOne" class="suggestions-card-more-button">Ver más...</a>
+                        </div>
+                    </figure>
+                    
+
+                    <figure class="suggestions-card" id="suggestionTwo">
+                        <div class="suggestions-card-title">
+                            <p><b>#StarWars</b></p>
+                            <img src="./images/close.svg" alt="Close">
+                        </div>
+                        <div class="suggestions-card-gif" id="gifCard2">
+                            <a id="seeMoreTwo" class="suggestions-card-more-button">Ver más...</a>
+                        </div>
+                    </figure>
+
+
+                    <figure class="suggestions-card" id="suggestionThree">
+                        <div class="suggestions-card-title">
+                            <p><b>#Geek</b></p>
+                            <img src="./images/close.svg" alt="Close">
+                        </div>
+                        <div class="suggestions-card-gif" id="gifCard3">
+                            <a id="seeMoreThree" class="suggestions-card-more-button">Ver más...</a>
+                        </div>
+                    </figure>
+
+
+                    <figure class="suggestions-card" id="suggestionFour">
+                        <div class="suggestions-card-title">
+                            <p><b>#BabyYoda</b></p>
+                            <img src="./images/close.svg" alt="Close">
+                        </div>
+                        <div class="suggestions-card-gif" id="gifCard4">
+                            <a id="seeMoreFour" class="suggestions-card-more-button">Ver más...</a>
+                        </div>
+                    </figure>
+
+                </div>
+
+            </section>
+
+
+            <section>
+                <div id="seeMoreOutput" class="see-more-output"></div>
+            </section>
+
+
+            <section class="trending">
+
+                <div class="trending-title">
+                    <p>Tendencias:</p>
+                </div>
+
+                <div class="trending-container" id="trending">
+                </div>
+
+            </section>
+
+            <section class="search-output">
+
+                <div class="search-output-title" id="searchOutputTitle">
+                    <p id="searchOutTitleText"></p>
+                </div>
+
+                <div id="searchOutput" class="search-output"></div>
+
+            </section>
+
+
+        </main>
+    </div>
+
+    <script src="./js/script.js"></script>
+    <script src="./js/counter.js"></script>
+
+</body>
+
+</html>
