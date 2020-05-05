@@ -37,8 +37,8 @@ const apikey ='6beCbssMOQlrd8MUyDVYbg5dzJXoopF6'
 
  function checkIfDark() {
      if (userColorPref === 'enabled') {
-         linkDarkCSS.href = '../styles/dark.css';
-         logoNode.src = '../images/gifOF_logo_dark.png';
+         linkDarkCSS.href = './styles/dark.css';
+         logoNode.src = './images/gifOF_logo_dark.png';
          navArrow.style.filter = 'invert(100%)';
      }
  };
