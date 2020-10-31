@@ -10,6 +10,7 @@
 body {
   background: #fff4fd;
   height: 100vh;
+  min-width: 350px
 }
 
 .main-wrapper {
